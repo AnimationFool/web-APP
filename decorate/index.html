@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link href="lib/css/ionic.min.css" rel="stylesheet">
+    <title>室内装饰图</title>
+</head>
+<script src="lib/js/ionic.bundle.js"></script>
+<script src="js/app.js"></script>
+
+<body>
+    <ion-nav-bar class="bar-light">
+        <ion-nav-buttons side="left"  >
+            <button class="button button-clear ">
+                <i class="icon ion-ios-person balanced"></i>
+            </button>
+        </ion-nav-buttons>
+
+        <ion-nav-buttons side="right">
+            <button class="button button-clear">
+                <i class="icon ion-ios-search balanced" ></i>
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <!--试图切换-->
+    <ion-nav-view>
+
+    </ion-nav-view>
+
+    <ion-tabs class="tabs-light tabs-icon-bottom ">
+        <div class="scroll-content overflow-scroll" >
+            <ion-tab  title="发现" icon-on="icon ion-ios-home balanced" icon-off="icon ion-ios-home-outline  balanced" badge="9" badge-style="badge-assertive" >
+            <div class="row" >
+                <div class="col">
+                    <img src="images/0001.jpg" style="width:100%;display: block;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col " style="margin: 4% 4% 7% 4%;width: 500px;">
+                    <div style="border-radius: 50%;background-color: #ff6364;">
+                        <a  style="display: block;border-radius: 50%">
+                            <i class="icon ion-ios-compose light"></i>
+                        </a>
+                    </div>装修设计
+                </div>
+                <div class="col" style="margin: 4% 4% 7% 4%">
+                    <img src="images/TB3_400x400.jpg" style="width:100%;display: block;border-radius: 50%" >资金保障
+                </div>
+                <div class="col " style="margin: 4% 4% 7% 4%">
+                    <img src="images/TB1_400x400.jpg" style="width:100%;display: block;border-radius: 50%" >免费监理
+                </div>
+                <div class="col" style="margin: 4% 4% 7% 4%">
+                    <img src="images/TB2_400x400.jpg" style="width:100%;display: block;border-radius: 50%">免费报价
+                </div>
+            </div>
+
+        </ion-tab>
+        </div>
+        <ion-tab title="案例" icon-on="icon ion-ios-briefcase balanced" icon-off="icon ion-ios-briefcase-outline balanced" >
+        </ion-tab>
+        <ion-tab title="日记" icon-on="icon ion-ios-list balanced" icon-off="icon ion-ios-list-outline balanced" >
+        </ion-tab>
+        <ion-tab title="灵感" icon-on="icon ion-ios-eye balanced" icon-off="icon ion-ios-eye-outline balanced" >
+        </ion-tab>
+        <ion-tab title="攻略" icon-on="icon ion-ios-book balanced" icon-off="icon ion-ios-book-outline balanced">
+        </ion-tab>
+    </ion-tabs>
+</body>
+</html>
